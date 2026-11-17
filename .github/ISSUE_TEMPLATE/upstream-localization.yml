@@ -4,7 +4,7 @@ title: "localization: "
 body:
   - type: markdown
     attributes:
-      value: Create one issue per source unit. Search existing issues for the same project and passage first. A maintainer should assign one active contributor before upstream-derived drafting begins.
+      value: Use this issue for internal coordination after a Hinglish support request is triaged; it is not the issue in the target project. The default demonstration is the target's primary README translated into Hinglish, paired with a target-project support request and (when allowed) a sample PR. Search the target for overlapping issues/PRs first. The task issue must be assigned to one active contributor before upstream-derived drafting begins; any additional target-maintainer approval is also required. This proposal does not claim Hinglish is standardized or already accepted.
   - type: input
     id: repository
     attributes:
@@ -32,14 +32,14 @@ body:
     id: scope
     attributes:
       label: Proposed scope
-      description: Name the exact paragraph, section, or string set. Keep one task small enough for one contributor.
+      description: Prefer the primary README as the demonstration scope. Record the exact page/sections and note if project limits require a smaller sample.
     validations:
       required: true
   - type: textarea
     id: locale-policy
     attributes:
       label: Hinglish acceptance evidence
-      description: Link the upstream locale policy or maintainer confirmation for this Hindi-in-Devanagari plus English-terms variety.
+      description: Link the current policy or state that Hinglish is not listed/its status is unclear. If it is not accepted, the proposed issue should ask maintainers whether they will support this variety; do not imply acceptance.
     validations:
       required: true
   - type: input

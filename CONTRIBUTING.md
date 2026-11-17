@@ -8,6 +8,7 @@ Thanks for helping make information easier to understand across technology, educ
 - Review a contribution for technical accuracy and readability.
 - Share common English technical terms and how Hindi-speaking audiences use them.
 - Report wording that is confusing, too formal, or tied to a particular regional usage.
+- Request investigation of Hinglish support for an upstream project through the [Hinglish support request form](https://github.com/shubham8agar/Hinglish/issues/new?template=hinglish-support-request.yml).
 - Research an upstream project's locale policy, translation channel, and content license; record findings in [PROJECTS.md](PROJECTS.md).
 
 ## Before submitting
@@ -46,23 +47,32 @@ Open a GitHub issue to discuss a larger proposal or a term that needs community 
 
 Contributors other than the repository owner must use a branch and pull request for changes to this repository; they must not commit directly to `main`. The repository owner may commit directly to this repository's `main`. This exception applies only to this repository and does not override another project's contribution rules.
 
-GitHub provides a translation form, a terminology form, and a pull request checklist for contributions. The contribution process will evolve as the project grows.
+GitHub provides a [Hinglish support request form](https://github.com/shubham8agar/Hinglish/issues/new?template=hinglish-support-request.yml) for intake, an upstream localization task form for assigned research/translation work, a translation form, a terminology form, and a pull request checklist. The contribution process will evolve as the project grows.
+
+## Requesting Hinglish support for another project
+
+Start with a **Hinglish support request** issue in this repository. It is an intake request for us to investigate, not an issue in the target project and not approval to translate or publish. We will verify the target's contribution rules, the license for the exact README/page, the current language policy, and the preferred contribution channel, then check for duplicate upstream work.
+
+If the target's policy is missing or unclear, prepare a separate, target-specific issue proposal asking maintainers whether they support this Hinglish variety and would accept a sample. The upstream issue is the request for maintainers; this repository's issue is for intake and coordination. After the target task issue is assigned to the contributor (and any separate maintainer approval is obtained), prepare the full primary README translation locally and propose a linked sample PR if the target permits it. Otherwise use the target's designated translation platform or pause.
+
+Submitting an intake issue does not authorize an external issue, translation, or PR. Each upstream action requires its own approval of the exact target and proposed content. A sample is a demonstration, not a claim that Hinglish is standardized or accepted.
 
 ## Coordinating concurrent contributors and agents
 
-This section applies to translations prepared for another project, not routine maintenance of this repository. Clones are independent, but two people can still duplicate a translation or conflict while editing shared files. Use one GitHub issue for each upstream source unit (for example, one article section or a small group of related UI strings).
+This section applies to translation proposals for another project, not routine maintenance of this repository. Our working style is sample-led: for each selected project with a local plan under `plans/`, aim to demonstrate Hinglish by translating the full primary `README.md` (or equivalent landing README), then propose Hinglish support and a sample PR. This demonstrates the approach; it does not claim Hinglish is a standardized language variety or an accepted locale in that project.
 
-1. Search open and closed issues for the upstream project and exact source URL before creating a task. Reuse an existing issue when it covers the same passage.
-2. Record the source revision, exact scope, audience, accepted-locale evidence, translation channel, and content license in the issue. Use the `Upstream localization task` issue form.
-3. Have one contributor assigned to the task issue at a time. Do not prepare an upstream-derived translation until the task is assigned and the source, locale policy, and rights checks are clear. Others may review or do separate research, but should coordinate in the issue before drafting overlapping text.
-4. Work on a separate branch named `translation/<issue-number>-<short-name>`. Do not work on `main`, reuse another person's branch, or force-push shared work.
-5. Before opening a pull request here, check that the issue is still assigned to you, the source has not changed, and no overlapping pull request has appeared. Link the task issue and update only the relevant tracker row in your branch.
-6. Treat `PROJECTS.md` as an aggregate status tracker, not a locking mechanism. Link active task issues there through a pull request; do not use simultaneous direct edits as claims.
+1. Verify the exact README content license and the project's current contribution and translation channels. A software license does not necessarily cover README text. Search open and closed issues and pull requests for Hinglish support and the same source page.
+2. Record the README URL and revision, reuse rights, current Hinglish/locale policy (including when it is absent or unclear), audience, review needs, and required channel in the local plan. Do not describe Hinglish as accepted unless the project confirms it.
+3. If Hinglish is not listed or its status is unclear, prepare a proposed issue asking maintainers whether they will support this Hinglish variety and accept a README sample. Obtain the user's approval for the exact issue before posting it. Work on upstream-derived text only after the relevant task issue is assigned to you; any separate maintainer approval required by the project is also necessary.
+4. Once assigned and any required maintainer approval is in place, prepare the full README translation as a local draft, with the provenance notice/record when allowed. Have it reviewed, then prepare a focused sample PR linking the support issue. The PR should describe the text as a proposal/demonstration, not an accepted or official localization. If the project requires another channel or prohibits community PRs, use that channel or pause instead.
+5. Before any external issue or PR, present the target, exact proposed text/change, and relevant checks to the user and obtain approval for that specific action. An issue approval does not by itself approve a later PR. Never push or contact maintainers without this approval.
+6. For upstream work, use the required issue-specific branch (`translation/<issue-number>-<short-name>` when applicable); do not work on the target project's `main`, reuse another person's branch, or force-push shared work.
+7. Recheck assignment, source revision, and overlapping work before submitting. Update this repository's `PROJECTS.md` only through its contribution workflow; it is an aggregate tracker, not a lock.
 
 If the issue assignment, source revision, or ownership is ambiguous, pause and ask in the task issue. External upstream actions remain subject to the approval gate below.
 
 ## Contributing to another project
 
-Before translating upstream material, check its current contribution guide, accepted language variants, preferred translation channel, and the license for the exact content. Do not assume a repository's software license covers its documentation or other assets. If Hinglish is not an accepted locale, ask maintainers before preparing a contribution.
+Before translating upstream material, check its current contribution guide, accepted language variants, preferred translation channel, and the license for the exact content. Do not assume a repository's software license covers its documentation or other assets. If Hinglish is not an accepted locale, the proposed support issue should ask maintainers whether it can be added; do not imply acceptance. A sample PR may follow only when the project permits it and the task issue is assigned to you, with any additional maintainer authorization required by that project.
 
 Agents may research upstream projects and prepare local drafts. They must not publish a fork, push a branch, open a pull request or issue, post comments, or contact maintainers until a human approves the specific target and exact proposed external action. For law, health, finance, safety, and other high-impact subjects, obtain qualified review before upstream submission.

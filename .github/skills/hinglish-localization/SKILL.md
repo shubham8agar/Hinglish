@@ -17,10 +17,10 @@ Help readers understand information directly in a natural Hindi-and-English regi
 ## Start-up procedure
 
 1. Read the root `AGENTS.md`, `PROJECTS.md`, `CONTRIBUTING.md`, `LANGUAGE_GUIDE.md`, and `TERMINOLOGY.md`.
-2. If asked to start without a named task, review the candidate queue in `PROJECTS.md`. Prefer the highest-starred candidate that also has a compatible language policy, a clear contribution channel, and compatible content reuse terms. Stars are a discovery signal, not a quality or suitability score.
-3. If no candidate is cleared, do read-only research and update the status to `Researching` or explain the blocker. Do not invent an accepted locale, license, or maintainer approval.
-4. Choose a small source unit (for example, one short paragraph, one help article section, or a few interface strings). Record the source URL, source revision, repository and content license, target audience, and translation channel in the proposal.
-5. Before drafting, search open and closed task issues for the same project and source unit. Use one assigned issue per source unit as the coordination claim; do not draft overlapping upstream-derived text when another contributor owns that task.
+2. If asked to start without a named task, review `PROJECTS.md` and the local plans under `plans/`; prefer the highest-priority project with a concrete plan. Stars are a discovery signal, not a quality or suitability score.
+3. For each selected planned project, the default demonstration is a Hinglish translation of its full primary `README.md` (or equivalent landing README), not an arbitrary paragraph. The goal is to show a practical sample and request support, not to claim Hinglish is standardized or already accepted by the project.
+4. Verify the exact README content license and the project's contribution/translation channel. Search open and closed issues and pull requests for Hinglish support or overlapping README work. Record the source URL/revision, license, audience, review needs, and channel in the local plan.
+5. A support request filed in this repository is intake only; it is not target approval or a task assignment. If Hinglish is not accepted or its status is unclear, prepare a separate target-specific issue proposal asking maintainers whether they will support Hinglish and accept a README sample. Get user approval for that exact issue before posting it. Do not translate upstream text until the relevant target task issue is assigned to you; also obtain any separate maintainer approval required by the target. If rights or a suitable contribution channel are unclear, continue research or pause without drafting adapted text.
 
 ## Drafting and review
 
@@ -29,8 +29,9 @@ Help readers understand information directly in a natural Hindi-and-English regi
 3. Preserve the source's meaning, facts, units, numbers, uncertainty, warnings, exceptions, formatting, links, identifiers, placeholders, and accessibility text.
 4. Tailor terminology and review to the domain. Do not turn a translation into new professional advice.
 5. Self-review with `LANGUAGE_GUIDE.md`; record specialist review required for high-impact content.
-6. Put drafts and source notes in this repository until a human has reviewed them. Keep `PROJECTS.md` status current; never label a draft as accepted or merged without evidence.
-7. For translations prepared for another project, work on a dedicated branch named `translation/<issue-number>-<short-name>`. Recheck issue ownership, source revision, and overlapping pull requests before proposing changes. Update the shared tracker only in the same branch and pull request as the related work. These upstream issue and branch-name requirements do not apply to routine changes to this repository's own docs or agent instructions; follow this repository's contribution process instead.
+6. Once assigned and any required maintainer approval is in place, keep the full README translation and source notes local until reviewed. Then prepare a focused sample PR that links the support issue and clearly labels the translation as a proposal, not an accepted/official localization. Follow the target's designated channel; do not submit community PRs where prohibited.
+7. Before any external issue or PR, present the exact target and proposed text/change and obtain user approval for that specific action; issue approval does not automatically approve a later PR. For upstream translation work, use the target's required issue-specific branch (for example, `translation/<issue-number>-<short-name>`). These upstream issue and branch rules do not apply to this repository's own documentation or agent instructions.
+8. Keep `PROJECTS.md` status current, distinguishing research, local draft/review, support issue, PR, merged, paused, and not aligned. Never label a draft as accepted or merged without evidence.
 
 ## Source accuracy and translation provenance
 

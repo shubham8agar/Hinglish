@@ -1,0 +1,56 @@
+name: Request Hinglish support
+description: Request research into Hinglish support for a repository, website, or technical documentation
+title: "support: Hinglish for "
+body:
+  - type: markdown
+    attributes:
+      value: This is an intake request in the Hinglish repository, not an issue in the target project and not authorization to publish a translation. We will check the target's contribution rules, content rights, and preferred channel before proposing any upstream action.
+  - type: input
+    id: target-url
+    attributes:
+      label: Target repository or website
+      description: Link the project where you would like Hinglish support.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: Main page or documentation URL
+      description: Link the primary README or the exact page you want considered. If unsure, link the project homepage.
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: What are you requesting?
+      options:
+        - Explore Hinglish support and translate the primary README as a sample
+        - Explore Hinglish support for a specific documentation page
+        - Find the project's existing translation platform or channel
+        - Other localization support
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience and use
+      description: Who would benefit, and what would Hinglish help them understand or do?
+      placeholder: Hindi-speaking readers who use...
+    validations:
+      required: true
+  - type: textarea
+    id: upstream-context
+    attributes:
+      label: Existing upstream discussions or translation channels
+      description: Link any known issues, localization platforms, or project contribution instructions. Leave blank if unknown.
+    validations:
+      required: false
+  - type: checkboxes
+    id: acknowledgement
+    attributes:
+      label: Before submitting
+      options:
+        - label: I understand this request starts research only; upstream issues, translations, and pull requests require rights/policy checks and separate approval.
+          required: true

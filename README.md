@@ -25,17 +25,19 @@ The [starter terminology list](TERMINOLOGY.md) records example terms and explana
 
 See [starter examples](EXAMPLES.md) for short English source sentences paired with draft Hinglish translations.
 
+To request Hinglish support for another project, open a [Hinglish support request](https://github.com/shubham8agar/Hinglish/issues/new?template=hinglish-support-request.yml) here. This starts research only; the target project's own issue, assignment, policy, content rights, and approval still govern any translation or contribution.
+
 ## Work with an agent
 
-This repository includes shared instructions for Continue, Codex, Claude Code, and GitHub Copilot. Continue loads its project rules from [`.continue/rules/hinglish-localization.md`](.continue/rules/hinglish-localization.md); the other clients use their respective project instructions and the shared localization skill. Clone and open the repository in a supported agent, then ask it to `start` or name a project. It should read the project queue, check the selected upstream's rules and content license, and prepare a small local draft. Cloning alone does not run an agent. External comments, pushes, issues, and pull requests require your explicit approval of the exact change.
+This repository includes shared instructions for Continue, Codex, Claude Code, and GitHub Copilot. Continue loads its project rules from [`.continue/rules/hinglish-localization.md`](.continue/rules/hinglish-localization.md); the other clients use their respective project instructions and the shared localization skill. Clone and open the repository in a supported agent, then ask it to `start` or name a project. For a selected project with a local plan, the default sample is a translation of its full primary README: first verify source-content rights and the contribution channel, then prepare a target-support issue proposal and seek task assignment before translating. After assignment and any required maintainer approval, the agent prepares the local README sample and linked sample-PR draft. A support-request issue filed in this repo is intake only, not upstream approval. Cloning alone does not run an agent. External comments, pushes, issues, and pull requests require your explicit approval of the exact change.
 
 The rules are model-provider-neutral and can guide Continue with local or OpenRouter models. Tool execution depends on the selected model and Continue mode: use only tools actually exposed to the agent, never treat generated text as command output, and report when a model cannot call a required tool. Review model-generated translations, especially for high-impact subjects.
 
-The [upstream project tracker](PROJECTS.md) records research status, star-count snapshots, contribution fit, and next steps. Star counts help prioritize discovery; they do not prove quality, permission, or language support.
+The [upstream project tracker](PROJECTS.md) records research status, star-count snapshots, contribution fit, and next steps. For a selected project with a local plan, our default demonstrator is a Hinglish translation of its primary README, paired with a proposal asking maintainers to support Hinglish and a sample PR when the project's rules allow it. This is a practical example, not a claim that Hinglish is standardized or already accepted there. Star counts help prioritize discovery; they do not prove quality, permission, or language support.
 
 ## Working in parallel
 
-Each upstream source unit is coordinated through one assigned GitHub issue, and each contributor uses an issue-specific branch. Check [Contributing](CONTRIBUTING.md) before starting; the project tracker is an overview, not a lock, so it is updated through pull requests rather than simultaneous direct edits.
+Each upstream README sample is coordinated through a task issue assigned to the contributor, and contributors use the target project's required branch and review workflow. Check [Contributing](CONTRIBUTING.md) before starting; the project tracker is an overview, not a lock, so it is updated through this repository's contribution workflow.
 
 ## Agent skill
 
