@@ -7,7 +7,7 @@ This is a researched watchlist, not an endorsement or a claim that these project
 | State | Count | Notes |
 | --- | ---: | --- |
 | Researching | 4 | Candidate policies and Hinglish locale fit are not yet confirmed. |
-| Ready to draft | 0 | No candidate has cleared all policy, language, and content-license checks. |
+| Ready to draft | 0 | No candidate has cleared exact README content-rights and contribution-channel checks. Locale acceptance may still need to be requested. |
 | Local draft / review | 0 | No upstream source text is currently being translated. |
 | Upstream PR open / merged | 0 | No external contributions have been submitted. |
 
@@ -15,14 +15,14 @@ This is a researched watchlist, not an endorsement or a claim that these project
 
 | Rank by stars | Project | Domain | Stars (2026-11-17) | Status | Translation fit and next check |
 | ---: | --- | --- | ---: | --- | --- |
-| 1 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | Education, software | 459,234 | Researching | The repository describes separate software and content licensing. Verify the exact curriculum content license and whether its contribution channel accepts a distinct Hinglish variant before drafting. |
-| 2 | [oppia/oppia](https://github.com/oppia/oppia) | Education | 6,996 | Researching | Repository has translation-related contribution systems. Verify whether adding a Hinglish variant is supported and use the project's designated workflow rather than assuming a source PR is appropriate. |
-| 3 | [ethereum/ethereum-org-website](https://github.com/ethereum/ethereum-org-website) | Finance, public education | 6,004 | Researching | Verify the current translation platform, locale acceptance, and the license for the exact educational content. The repository's software license alone is not sufficient. |
-| 4 | [mdn/translated-content](https://github.com/mdn/translated-content) | Technology education | 2,047 | Researching | Maintains translated documentation and asks contributors to be fluent in the target locale. Check whether maintainers accept Hinglish as a distinct variant; do not overwrite or relabel Hindi content. Verify `LICENSE.md` and source-page rights. |
+| 1 | [freeCodeCamp/freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) | Education, software | 459,234 | Researching | Verify the primary README's content license and the contribution channel. If Hinglish is not listed, propose a support issue; once the task issue is assigned and any required maintainer approval is in place, use the README as the demonstration sample and link it from a sample PR. |
+| 2 | [oppia/oppia](https://github.com/oppia/oppia) | Education | 6,996 | Researching | Verify the primary README's rights and the official translation channel. If Hinglish is not listed, request support through the allowed channel; use a README sample only if authorized. |
+| 3 | [ethereum/ethereum-org-website](https://github.com/ethereum/ethereum-org-website) | Finance, public education | 6,004 | Researching | Verify the primary README's content license and translation channel. If Hinglish is not listed, request support and propose a README sample only where the project's rules allow it. |
+| 4 | [mdn/translated-content](https://github.com/mdn/translated-content) | Technology education | 2,047 | Researching | Verify `LICENSE.md`, primary README rights, and accepted channel. Ask whether maintainers support Hinglish as a distinct variant; do not overwrite or relabel Hindi content. Use a sample only with authorization. |
 | 5 | [microsoft/PowerToys](https://github.com/microsoft/PowerToys) | Software utilities | 109,000 | **Paused** | Microsoft internal localization only: "For localization issues, please file an issue to notify our internal localization team, as community PRs for localization aren't accepted. Localization is handled exclusively by the internal Microsoft team." This project does not accept community-contributed translations. |
 | 6 | [twentyhq/twenty](https://github.com/twentyhq/twenty) | CRM | 30,000 | **Paused** | Uses CrowdTran for translations: "Thanks to these amazing services that we use... translating (Crowdin)". Community translations must go through the CrowdTran interface rather than GitHub PRs. Does not accept direct upstream contributions via this repository. |
-| 7 | [odoo/odoo](https://github.com/odoo/odoo) | ERP/CRM | 42,000 | **Researching** | Large open source business app suite. Needs investigation: Does Odoo accept community translations via its official Transifex/Launchpad pipeline? Need to verify if Hinglish is an accepted locale in Odoo's translation infrastructure. |
-| 8 | [flutter/flutter](https://github.com/flutter/) | Mobile SDK | 150,000 | **Researching** | Large open source SDK for mobile/web/desktop apps. Requires verification: Does Flutter's localization system (pub.dev/packages/intl, community contributions) accept Hinglish as a valid locale for translation contributions? Must check community contribution workflow for Flutter's docs/translations. |
+| 7 | [odoo/odoo](https://github.com/odoo/odoo) | ERP/CRM | 42,000 | **Researching** | Verify primary README rights and the current Transifex/Launchpad contribution channel. Ask whether Hinglish is supported; use a README sample only through an authorized channel. |
+| 8 | [flutter/flutter](https://github.com/flutter/) | Mobile SDK | 150,000 | **Researching** | Verify the primary README rights and contribution channel. Ask whether Hinglish is supported; use a README sample only if project rules and maintainers permit it. |
 
 Ranks are only among the projects in this watchlist, not a global GitHub ranking. Recheck counts and all upstream rules before work; repositories and policies change.
 
@@ -35,14 +35,15 @@ Ranks are only among the projects in this watchlist, not a global GitHub ranking
 ## Work states
 
 - **Researching**: checking current maintainers' rules, accepted language variants, translation channel, and content rights.
-- **Ready to draft**: all checks are clear; no source text has been translated yet.
+- **Ready to draft**: exact source-content rights and an appropriate contribution channel are clear, and the task issue is assigned to the contributor (with any required maintainer approval). Locale acceptance may still be under discussion; do not imply it is established.
 - **Local draft / review**: a small translation exists in this repository and awaits linguistic/domain review.
+- **Target support issue proposed/open**: a target-project issue asks maintainers to support Hinglish; this is separate from an intake issue in this repository and does not count as accepted locale support.
 - **Upstream PR open**: a human approved the exact change and it was submitted; include the PR URL and date.
 - **Merged**: upstream merged it; include the PR URL.
 - **Paused**: work is blocked or waiting for maintainers/community input; state why.
 - **Not aligned**: the project's language model or contribution process conflicts with this project's approach.
 
-When changing a status, update the row with the date, evidence link, owner/reviewer if known, active task issue when applicable, and next action. The issue assignment is the task claim; this table is only an aggregate status view. Update it through a branch and pull request. Do not mark a project ready based on stars or general repository licensing alone. Do not count local drafts as upstream contributions.
+For each project selected for work, keep a local plan under `plans/<owner>-<repo>/PLAN.md`. The default sample is the full primary README; record the local intake issue, exact source URL/revision, content license, locale-policy evidence or uncertainty, audience, review needs, target support-issue proposal/status, assigned task issue, and sample-PR proposal/status. When changing a tracker status, include the date, evidence link, owner/reviewer if known, active task issue when applicable, and next action. Assignment to the contributor is the task claim; record any separate maintainer authorization too. This table is only an aggregate status view. Update it through this repository's contribution workflow. Do not mark a project ready based on stars or general repository licensing alone. Do not count local drafts as upstream contributions.
 
 ## Future domains
 

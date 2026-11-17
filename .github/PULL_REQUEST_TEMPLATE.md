@@ -5,6 +5,7 @@ Describe the translation, terminology, or documentation change.
 ## Coordination
 
 - Task issue (required for upstream translation work; otherwise optional): #
+- Hinglish-support issue (if this PR is a sample proposal):
 - Upstream source URL and revision (if applicable):
 - Exact scope changed:
 
@@ -19,5 +20,6 @@ Describe the translation, terminology, or documentation change.
 - [ ] English terms are useful in this context; unfamiliar terms are explained.
 - [ ] The audience and relevant regional wording are noted.
 - [ ] For adapted text, the source URL and reuse license are included.
+- [ ] If this is a Hinglish demonstration, it is clearly presented as a sample/proposal and does not claim the locale is accepted or standardized.
 - [ ] High-impact technical claims have been flagged for specialist review.
-- [ ] I checked for overlapping issues or pull requests and worked on an issue-specific branch.
+- [ ] For upstream translations, I checked for overlapping issues or pull requests and used the target's required issue/branch workflow.
