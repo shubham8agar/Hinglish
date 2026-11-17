@@ -1,0 +1,30 @@
+name: Terminology suggestion
+description: Suggest or discuss a Hinglish explanation for a technical term
+title: "term: "
+body:
+  - type: input
+    id: term
+    attributes:
+      label: English term
+      placeholder: e.g. backup
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested explanation or example
+      description: Include a natural sentence in Hinglish, if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Audience and context
+      description: Note where this wording is used and any regional variation you know of.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional. Share other common wording and why you prefer this proposal.

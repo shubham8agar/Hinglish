@@ -1,0 +1,41 @@
+name: Translation or example
+description: Suggest a short Hinglish translation or improve an example
+title: "translation: "
+body:
+  - type: markdown
+    attributes:
+      value: Include context so reviewers can check both the language and the technical meaning.
+  - type: input
+    id: source-url
+    attributes:
+      label: Source URL
+      description: Link the original material, if this is a translation.
+      placeholder: https://
+  - type: textarea
+    id: source-text
+    attributes:
+      label: Source text
+      description: Paste only the short passage needed to review your contribution.
+    validations:
+      required: true
+  - type: textarea
+    id: hinglish-text
+    attributes:
+      label: Proposed Hinglish
+      description: Use Devanagari for Hindi and retain useful English technical terms.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Audience and terminology notes
+      description: Who is this for? Note regional wording or terms that may need review.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Source and reuse rights
+      description: If based on existing material, provide its license and explain why adaptation is permitted. For original text, say so.
+    validations:
+      required: true
