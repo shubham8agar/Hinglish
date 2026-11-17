@@ -4,7 +4,7 @@ title: "localization: "
 body:
   - type: markdown
     attributes:
-      value: Use this issue for internal coordination after a Hinglish support request is triaged; it is not the issue in the target project. The default demonstration is the target's primary README translated into Hinglish, paired with a target-project support request and (when allowed) a sample PR. Search the target for overlapping issues/PRs first. The task issue must be assigned to one active contributor before upstream-derived drafting begins; any additional target-maintainer approval is also required. This proposal does not claim Hinglish is standardized or already accepted.
+      value: Use this issue for internal coordination after a Hinglish support request is triaged; it is not the issue in the target project. The default first contribution is the target's primary README translated into Hinglish, with a PR asking to add/list Hinglish support. Search the target for overlapping issues/PRs first. The target task issue must be assigned to one active contributor before drafting begins; any additional maintainer approval is also required. Verify content reuse rights, but do not translate license text or notices. This proposal does not claim Hinglish is standardized or already accepted.
   - type: input
     id: repository
     attributes:
@@ -38,8 +38,8 @@ body:
   - type: textarea
     id: locale-policy
     attributes:
-      label: Hinglish acceptance evidence
-      description: Link the current policy or state that Hinglish is not listed/its status is unclear. If it is not accepted, the proposed issue should ask maintainers whether they will support this variety; do not imply acceptance.
+      label: Current Hinglish policy/status
+      description: Link the current policy or state that Hinglish is not listed/its status is unclear. Prior acceptance is not required for a sample PR that proposes support; do not imply acceptance.
     validations:
       required: true
   - type: input
@@ -52,8 +52,8 @@ body:
   - type: textarea
     id: rights
     attributes:
-      label: Content license and reuse basis
-      description: Identify the license covering this exact content and link its terms. A repository's code license may not cover documentation.
+      label: README content reuse rights
+      description: Identify the license that permits adapting this exact README content and link its terms. A repository's code license may not cover documentation. Do not translate the license text or notices.
     validations:
       required: true
   - type: dropdown
