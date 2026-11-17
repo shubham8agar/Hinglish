@@ -1,0 +1,3 @@
+# GitHub Copilot Instructions
+
+Follow the shared repository workflow and safety rules in the root `AGENTS.md`. For Hinglish writing, localization, or upstream project research, load `.github/skills/hinglish-localization/SKILL.md`. When asked to start without a named task, follow the start-up procedure in `AGENTS.md`; prepare local drafts and never make an external change without approval for the specific action.

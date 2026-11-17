@@ -1,0 +1,79 @@
+name: Upstream localization task
+description: Propose and claim one small, source-specific localization task
+title: "localization: "
+body:
+  - type: markdown
+    attributes:
+      value: Create one issue per source unit. Search existing issues for the same project and passage first. A maintainer should assign one active contributor before upstream-derived drafting begins.
+  - type: input
+    id: repository
+    attributes:
+      label: Upstream repository
+      description: Link the exact project repository.
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: input
+    id: source-url
+    attributes:
+      label: Exact source URL
+      description: Link the specific page, file, or translation unit.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: source-revision
+    attributes:
+      label: Source revision
+      description: Record a commit, version, or last-updated date so concurrent work uses the same source.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Proposed scope
+      description: Name the exact paragraph, section, or string set. Keep one task small enough for one contributor.
+    validations:
+      required: true
+  - type: textarea
+    id: locale-policy
+    attributes:
+      label: Hinglish acceptance evidence
+      description: Link the upstream locale policy or maintainer confirmation for this Hindi-in-Devanagari plus English-terms variety.
+    validations:
+      required: true
+  - type: input
+    id: contribution-channel
+    attributes:
+      label: Required contribution channel
+      description: For example, a translation platform, locale repository, or pull request process.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Content license and reuse basis
+      description: Identify the license covering this exact content and link its terms. A repository's code license may not cover documentation.
+    validations:
+      required: true
+  - type: dropdown
+    id: domain-risk
+    attributes:
+      label: Domain and review risk
+      description: Identify the domain and any qualified review needed.
+      options:
+        - General or education
+        - Technology or software
+        - Finance
+        - Law or public policy
+        - Health or safety
+        - Other or high-impact
+    validations:
+      required: true
+  - type: checkboxes
+    id: duplicate-check
+    attributes:
+      label: Duplicate-work check
+      options:
+        - label: I searched existing issues and pull requests for this repository and exact source unit.
+          required: true

@@ -11,14 +11,23 @@ This list captures possible ways to explain common technology terms. It is a dis
 | Download | Internet या दूसरे device से अपने device पर file लेना | Unknown website से कोई file Download करने से पहले उसका source जाँचें। |
 | Firewall | Network traffic को तय नियमों के अनुसार allow या block करने वाला system | Firewall कुछ unwanted network connections को block कर सकता है। |
 | Malware | नुकसान पहुँचाने या बिना अनुमति काम करने के लिए बनाया गया software | Unknown attachment में Malware हो सकता है; उसे खोलने से पहले verify करें। |
-| Operating system | Device का मुख्य software, जो apps और hardware को manage करता है | अपने Phone का Operating System समय-समय पर Update करें। |
+| Operating system | Device का मुख्य software, जो apps और hardware को manage करता है | अपने Phone का Operating System समय-समय पर Update # Security Tips – Hinglish
+
+1. अपनी ज़रूरी फ़ाइलों का **Backup** हमेशा **Cloud Server** पर रखें।
+
+2. आज के **Digital** दौर में अपने **Personal Data** को **Secure** रखना बहुत ज़रूरी है।
+   - **Cyber Criminals** अक्सर **Phishing Links** और **Malware** के ज़रिए आपके **System** में **Hack** करने की कोशिश करते हैं।
+   - इसलिए, अपने सभी **Online Accounts** पर **Two-Factor Authentication (2FA)** ज़रूर **On** रखें।
+   - इसके अलावा, हर **Website** के लिए एक अलग और **Strong Password** का **Use** करें, जिसे **Manage** करने के लिए आप किसी **Trusted Password Manager** की **Help** ले सकते हैं।
+   - **Public Wi-Fi** का **Use** करते समय बिना **VPN** के कोई भी **Banking Transaction** न करें, क्योंकि इससे आपकी **Sensitive Information Leak** होने का **Risk** बढ़ जाता है।
+   - अपने **Phone** और **Laptop** के **Operating System** और **Apps** को समय-समय पर **Update** करते रहें ताकि पुराने **Security Bugs** को **Fix** किया जा सके।करें। |
 | Password manager | Passwords को सुरक्षित रूप से store और organize करने वाला tool | हर Website के लिए अलग Password बनाने और रखने में Password Manager मदद कर सकता है। |
 | Phishing | नकली message या website के ज़रिए जानकारी चुराने की कोशिश | अनजान message में आए link पर login करने से पहले website का address जाँचें; वह Phishing हो सकता है। |
 | Privacy | आपकी personal जानकारी कौन देख या use कर सकता है, इस पर आपका control | App install करने से पहले उसकी Privacy settings और permissions देख लें। |
 | Server | ऐसा computer या service जो दूसरे devices को data या functionality देता है | Website का Server request मिलने पर page का data भेजता है। |
 | Two-Factor Authentication (2FA) | Login में password के अलावा एक और verification step | जहाँ उपलब्ध हो, अपने Account पर Two-Factor Authentication (2FA) On रखें। |
 | Update | Software का नया version या बदलाव, जिसमें features या fixes हो सकते हैं | Apps को Update करने से नए features और Security Fixes मिल सकते हैं। |
-| VPN | आपके device और VPN service के बीच network connection को route करने वाला tool | VPN कुछ network risks कम कर सकता है, लेकिन यह हर तरह की tracking या risk से सुरक्षा की guarantee नहीं देता। |
+| VPN | VPN service आपके device के कुछ या सभी network traffic को VPN server के through route कर सकती है; कौन-सा traffic route या encrypt होता है, यह configuration पर निर्भर करता है। | VPN use करने पर VPN provider पर भरोसा महत्वपूर्ण है; VPN हर तरह की tracking या risk से सुरक्षा की guarantee नहीं देता। |
 
 ## Review status
 

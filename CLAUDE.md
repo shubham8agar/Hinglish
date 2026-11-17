@@ -1,0 +1,3 @@
+# Claude Code Instructions
+
+Read `AGENTS.md` for this repository's shared workflow and safety rules. For Hinglish writing, localization, or upstream project research, load `.claude/skills/hinglish-localization/SKILL.md` and follow it. When asked to start without a named task, use the start-up procedure in `AGENTS.md`; prepare local drafts and never make an external change without approval for the specific action.
