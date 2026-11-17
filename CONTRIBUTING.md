@@ -44,6 +44,8 @@ Do not invent revision IDs, timestamps, review status, or commit hashes. If the 
 
 Open a GitHub issue to discuss a larger proposal or a term that needs community input. For a focused wording change, open a pull request with the text and a brief explanation of what it improves. Keep examples and their technical claims clearly sourced or flagged for review.
 
+Contributors other than the repository owner must use a branch and pull request for changes to this repository; they must not commit directly to `main`. The repository owner may commit directly to this repository's `main`. This exception applies only to this repository and does not override another project's contribution rules.
+
 GitHub provides a translation form, a terminology form, and a pull request checklist for contributions. The contribution process will evolve as the project grows.
 
 ## Coordinating concurrent contributors and agents
