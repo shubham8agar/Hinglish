@@ -30,7 +30,13 @@ Help readers understand information directly in a natural Hindi-and-English regi
 4. Tailor terminology and review to the domain. Do not turn a translation into new professional advice.
 5. Self-review with `LANGUAGE_GUIDE.md`; record specialist review required for high-impact content.
 6. Put drafts and source notes in this repository until a human has reviewed them. Keep `PROJECTS.md` status current; never label a draft as accepted or merged without evidence.
-7. Work on a dedicated branch named `translation/<issue-number>-<short-name>`. Recheck issue ownership, source revision, and overlapping pull requests before proposing changes. Update the shared tracker only in the same branch and pull request as the related work.
+7. For translations prepared for another project, work on a dedicated branch named `translation/<issue-number>-<short-name>`. Recheck issue ownership, source revision, and overlapping pull requests before proposing changes. Update the shared tracker only in the same branch and pull request as the related work. These upstream issue and branch-name requirements do not apply to routine changes to this repository's own docs or agent instructions; follow this repository's contribution process instead.
+
+## Source accuracy and translation provenance
+
+- If a source appears illogical, contradictory, or factually wrong, do not silently fix it or present the translation as verified. Flag the suspected source issue separately, with evidence when available, and ask for human review. Pause publication when the issue could materially mislead readers or cause harm; high-impact material also needs qualified review.
+- Every published translated page must carry a short translation notice linking to a version-controlled provenance record in this repository. The record must identify the source URL and exact revision/commit (or say when unavailable), the source-check time, the translation time in ISO 8601 UTC, review status, and unresolved source concerns. Link to the immutable repository commit containing the record when available; do not imply independent fact-checking.
+- Follow the target project's rules. If it does not permit the notice or repository link, keep the translation and notice in a local draft and ask the user before proposing publication without them. Never add unauthorized content to an upstream page.
 
 ## Domain safeguards
 

@@ -20,6 +20,26 @@ Thanks for helping make information easier to understand across technology, educ
 
 Please be respectful when discussing language. A suggestion can be useful without being the only valid way to express an idea. This project is not about judging anyone's Hindi, English, or dialect.
 
+## This repository and upstream projects
+
+The assigned task issue, source-unit coordination, and `translation/<issue-number>-<short-name>` branch requirements below apply only when preparing a translation for another project. They do not require an upstream issue number for routine changes to this repository's own documentation, agent instructions, or original examples. For changes to this repository, use the contribution process described here; external changes to another project still require approval for the specific target and action.
+
+## Translation accuracy and provenance
+
+Do not silently correct a source while translating it. If it appears illogical, contradictory, or factually wrong, flag the concern separately and ask for human review; pause publication if it could materially mislead readers or cause harm. Do not describe a translation as independently verified unless it has been checked and that review is recorded.
+
+Keep one version-controlled provenance record per translated source unit alongside its local draft. Every published translated page should include a brief notice linking to that record, preferably through an immutable repository commit permalink. Include:
+
+- The source title and URL, exact source revision/commit (or state that it is unavailable), and when the source was checked.
+- The translation timestamp in ISO 8601 UTC, such as `2026-11-17T09:45:00Z`.
+- Review status and any unresolved source concerns. The immutable repository permalink identifies the commit containing the record; do not put that same commit's hash inside its own record.
+
+Suggested notice:
+
+> Translation notice: This is a Hinglish translation of [source title] ([source URL]), based on source revision [revision or “unavailable”] checked at [UTC time]. Translation prepared at [ISO 8601 UTC time]. This is not an independent fact-check. See the [provenance record](repository URL) for the source, commit, and review status.
+
+Do not invent revision IDs, timestamps, review status, or commit hashes. If the target project's rules do not allow this notice or link, keep the translation and notice as a local draft and ask the user before proposing publication without them.
+
 ## Proposing a change
 
 Open a GitHub issue to discuss a larger proposal or a term that needs community input. For a focused wording change, open a pull request with the text and a brief explanation of what it improves. Keep examples and their technical claims clearly sourced or flagged for review.
@@ -28,7 +48,7 @@ GitHub provides a translation form, a terminology form, and a pull request check
 
 ## Coordinating concurrent contributors and agents
 
-Clones are independent, but two people can still duplicate a translation or conflict while editing shared files. Use one GitHub issue for each upstream source unit (for example, one article section or a small group of related UI strings).
+This section applies to translations prepared for another project, not routine maintenance of this repository. Clones are independent, but two people can still duplicate a translation or conflict while editing shared files. Use one GitHub issue for each upstream source unit (for example, one article section or a small group of related UI strings).
 
 1. Search open and closed issues for the upstream project and exact source URL before creating a task. Reuse an existing issue when it covers the same passage.
 2. Record the source revision, exact scope, audience, accepted-locale evidence, translation channel, and content license in the issue. Use the `Upstream localization task` issue form.
